@@ -1,0 +1,99 @@
+1. write a algorithm to find whether a nnumber is even or odd
+     step 1:-  start
+     step 2:-  read the number
+     step 3:-  if the number is divisible by 2(remainder is 0)
+                 print the number is even
+                else
+                 print the number is odd
+     step 4:- stop
+
+2. write a algorithm to find whether a person is eligible to vote or not(age>18 eligible to vote)
+ 
+     step 1:- start
+     step 2:- read the age
+     step 3:- if(age>18)
+                  print"eligible to vote"
+                 else
+                  print "not eligible to vote"
+     step 4:- stop
+
+3.write an algorithm to find whether a student is eligible to take admission in a college(if percentage is greater than 85 then he is eligible to take admission)
+
+     step 1:- start
+     step 2:- read the percentage of students
+     step 3:- if(percentage>85)
+               print"eligible"
+              else
+               print"not eligible"
+     step 4:- stop
+
+4. write an algorithm to find the biggest of two numbers
+
+     step 1:-start
+     step 2:- read the numbers number1, number2
+     step 3:- if(number 1> number 2)
+                print"number1 is bigger"
+               else
+                print"number2 is bigger"
+     step 4:-  stop
+
+5.write a algorithm to find gross salary
+
+     step 1:- start
+     step 2:- read the basic salary basic_salary
+     step 3:- find the hra of basic salary hra<--(basic salary)*20/100
+     step 4:- find the da of basic salary da<--- (basic salary)*50/100
+     step 5:- find the gross salary gross_salary<--(basic salary+DA+HRA)
+     step 6:- print gross_salary
+     step 7:- stop
+
+6.write a algorithm for swapping of 2 numbers with using third variable
+     
+     step 1:- start
+     step 2:- read the two quantities number 1, number 2
+     step 3:- assign the number1 value in temp
+                  temp<--number1 
+     step 4:- assign the number1 value to number1 
+                   number1<---number2
+     step 5:- assign the temp value to number2
+                   number<---- temp
+     step 6:- print the swapped values number1 and number2
+     step 7:- stop
+
+7. write a algorithm for swapping of 2 variables with out using third variable
+     
+     step 1:- start
+     step 2:- read the two variables x,y
+     step 3:- x=x+y
+     step 4:- y=x-y
+     step 5:- x=x-y
+     step 6:- print x,y
+     step 7:- stop
+
+8. write an algorithm to calculate the compound interest
+
+     step 1:- start
+     step 2:- input principle amount,rate, time, p, r, t
+     step 3:- calculate compound interest using formula CI= principle*pow((1+rate/100),time)
+     step 4:- print the resultant value of CI
+     step 5:- stop
+
+9. write an algorithm to find the biggest of 3 numbers
+  
+    step 1:- start
+    step 2:- read the number1, number2, number3
+    step 3:- if(number1>number2)
+               {
+             if(number1 > number 3)
+               print "number 1 is bigger"
+             else
+             print " number 3 is bigger"
+              }
+             else
+              {
+              if( number 2 > number 3)
+             print " number2 is bigger"
+             else
+              print " number3 is bigger"
+             }
+    step 4:- stop 
