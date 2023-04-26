@@ -1,0 +1,19 @@
+ALGORITHM FOR ONLINE TICKET RESERVATION SYSTEM
+
+step 1:- start
+step 2:- open the website of online ticket reservation system 
+step 3:- now it displays the home page and it offers modules like 
+a.bus
+b.train
+c.cab
+4.if he/she seclects any of the above module like bus/train/cab then it will ask to select the route(source,destination and date)
+5.after entering source, destination and date click on search button 
+6.it will display the bus/train/cab availability of slots on that particular date 
+7.the passenger can select the transport as per his/her requirements
+8.after selecting he/she needs to fill the passenger details like( name, phone number, gender,age)
+9. after entering the personal details you can click on proceed 
+10. now it will redirect to payment details now passenger has to fill the payment details
+11. once after the payment is done the conformation ticket will be displayed( passenger can save it or print it)
+12.now it will display as your ticket reservation is confirmed THANK YOU
+13.stop
+ 

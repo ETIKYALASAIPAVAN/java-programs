@@ -1,0 +1,52 @@
+EMPLOYEE MANAGEMENT SYSTEM
+1.start
+2.login in to the website
+3.if the user is new 
+  then print create an account 
+  else print(" login with user name and password")
+4. select any of the option (employee/administration)
+5. if the user selects employee option then display employee details 
+5.1 employee can create a profile by filling their personal details (ex:- name, Date of birth, pan number , bank account number, qualifications etc.)
+5.2 after registration/login employee can generate employee id
+5.3 user/employee can access the options like update /delete the records based on requirements of a employee 
+5.4 employee can apply for leave 
+5.5 employee can track their work progress daily 
+5.6 employee can raise the issues and can give their feedback.
+5.7 employe can access incentives based on their extra works
+5.8 employee can access PF(provident fund) after retirement
+5.9 employee can apply for resignation 
+6.0 employee can get the promotions based on their hardwork 
+6.1 employee can be rewarded with bonus if their progress is increased
+6.2 employee can apply for loans 
+6.3 employee can access calender of events
+6.4 employess can access advancements in their company/organizations 
+6.5 employee can access pick up and drop options facilities provided by an company/organization 
+6.6 if employee can need transport facility then employee has to give pick up/drop off location and timing  
+6.6 employee can view salary, leaves 
+6.7 employee can download monthly payment slip 
+6.8 employee can have training sessions & meetings
+
+
+
+
+7.  if the user click on administration option
+7.1 it displays a dialog box enter user name and password where administrator had to fill their respective credentials
+7.2 after login by administrator it will show administrator credentials
+7.3 where administrator can view the list of employee
+7.4 where administrator can view the work  progress of employee
+7.5 where administrator can make approval of  leave requests of an employee
+7.6 where administrator can generate the salary of an employee 
+7.7 where administrator can view the feedback of an employee
+7.8 where administrator can assign new projects/work tasks for an employee
+7.9 where administrator can check login time and logout time of an employee
+8.0 where administrator can make proper  work schedule and break time for an employee 
+8.1 where administrator can make new groups/batches by assigning a new projects/tasks 
+8.2 where administrator can remove/ add the employees
+8.3 where administrator can organize the meetings 
+8.4 where administrator can solve the queries of an employees
+8.5 where administrator can access the PF of an employee
+8.6 where administrator can modify/update the details of an employee
+8.7 where administrator can create calender of events
+8.8 where administrator can handle pick up and drop facility of an employees and create routes for transportation
+8.9 where administrator can approve safety equipments & resources  for an employee  
+9.0 

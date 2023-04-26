@@ -1,0 +1,44 @@
+hospital management system 
+
+1.start
+2.open hospital management website/application 
+3.after opening the application/website it displays 3 types of login
+3.1 director login
+3.2 doctor login
+3.3 employee/staff login
+3.4 patient login
+
+4.if director wants to login in application/website he can login through required credentials(user name & password)
+4.1 after successful login director can view list of employees/staff/patients/doctors
+4.2 director can add/delete/manage employee/staff/doctors
+4.3 director can see revenue generated for hospital based on admissions and bill payments of patients 
+4.4 director can update/modify salaries for employee/staff and for doctors
+
+5. if doctor wants to login he can login through required credentials(user name & password)
+5.1 after successful login doctor can view patient details like health status
+5.2 doctor can view number  of patients & approve the patient appointments 
+5.3 doctor can update/modify the medicines accorrding to patient health status & he can recommend to discharge patient
+5.4 doctor can view surgery timings/visiting timings
+5.5 doctor can apply for leaves by sending mail to the director
+
+6. if employee wants to login they can login through required credentials(user name & password)
+6.1  employee can view list of patients present in the hospital 
+6.2  employee can view their attendence
+6.3  employee can view their in and out timings
+6.4  employee can apply for leaves by sending mail for director
+6.5  employee can view the prescriptions alloted to the patients by the doctor
+6.6  employee can provide medicines to the patient accorrding to the doctors prescription
+6.7  if employee is a receptionist he/she can accept the registrations of a patients
+6.8  if employee is from medical section he/she can check the availability of medicines and can refill the medicines according to the stock 
+
+7. if patient wants to login they can login through required credentials(user name& password)
+7.1 patient can register for appointment by filling the appointment form
+7.2 patients can see their health status and medicines prescribed by the doctor  
+7.3 patients can view their doctors appointment timings
+7.4 patients can view their due bills and cleared bills
+
+8.stop
+
+
+
+

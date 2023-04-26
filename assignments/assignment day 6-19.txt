@@ -1,0 +1,18 @@
+order/ restaurant management system 
+
+1.start 
+2.the owner/manager has build a online order management website then 
+3. website to be designed with some rules and regulations based on manager requirements 
+4.if the user is manager login  successful else login is unsuccessfull 
+
+5.1  list of users/customers registered in website 
+5.2  the number of orders/ pre booking orders placed by  a customer
+5.3  tracking of orders of a customer
+5.4  transaction details of a customer
+5.5  availability of food stock 
+5.6  cancellation of orders and reasons by customer
+5.7  feedbacks of an ordered food from the  customer 
+5.8  in employee management section  manager can watch no.of leaves/no.of working hours/salary status/position of an employee
+5.9  availabilty of number.of staff in the kitchen 
+
+
