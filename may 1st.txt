@@ -1,0 +1,210 @@
+Features of java
+
+1.object-oriented
+2.simple
+3.secure
+4.mutti-threaded
+5.robust
+6.portable
+7.interpreted
+8.platform independet
+9.dynamic
+10.Architecture neutral
+11.distributed
+12.high-performance
+
+>--- Sun Microsystems
+1.java SE
+2 java EE
+3.java ME
+
+>---packages of 2 types
+  1. pre-defined packages
+  2. user defined packages
+
+>---Anatomy  of java program
+
+documentation section
+package statement
+import statements
+interface statements
+class definitions
+Main Method class
+{
+  Main Method Definition
+}
+
+
+METHOD:- it is same like functio but define inside of class
+
+FUNTION:- sub procedudre (or) subrouti e that specifies a class
+
+
+
+
+SYNTAX
+public class Welcome
+{
+ public static void main(String[]args)
+{
+system.out.println("Hello,World!");
+}
+}
+
+
+
+
+
+
+
+To create and execute the java program
+
+
+Save
+program name.java
+
+compile
+javac program name.java
+
+Run
+java class name
+JDK-Java Development Kit-used to develop java applications it contains JRE and some development tools
+JRE-Java Runtime Environment-used to run applications it contains JVM and class libraries
+we need JDK to develop applications
+JVM-Java Virtual Machine-used to translate byte code into   native machine code
+
+>-- JIT COMPILER improve the performance of code in runtine
+
+​
+
+-----------------------------
+
+tokens=are the smallest unit of a program they include keywords,identifiers, operators,literals,seperators and comments    
+1.keywords:-there are 50keywords in java and they are predefined reserved words of any programming language and it is always written in lower case
+2.identifiers:- they are used to name a variable ,constant, class, function, and array .it is usually defined by the user.it uses letters, underscore and a dollar sign as the first character.
+
+Identifier rules:
+
+1.They can have alphabets, digits, underscore and dollar symbol
+2.They must not begin with digit
+3.Keywords cannot be used as identifiers
+4.whitespace characters are also not allowed
+
+     
+datatypes = datatypes are classified into two types
+1.premitive 
+a.numeric 
+1)integer = 
+*byte =1byte 
+*short= 2 byte 
+*int= 4byte 
+*long= 8byte 
+2)float =
+ *float= 4byte 
+*double= 8byte 
+b.non numeric
+ *char=2byte 
+*boolean=1byte
+2.non premitive
+*string
+*array         
+ VARIABLES:- variable is a named memory location whose value can change during the exection of the program.
+ *variables must first be declare before they can be used.
+*syntax:- datatypes var1,var2
+  ex:-intx,y
+  
+* literals>--any constant value in the program(9,true,false,null,etc..)
+
+* operators>--symbols used to perform certain operations
+           1.Arthimatic operator
+           2. bitwise operator
+           3. Assignment operator
+           4. Relational operator
+           5. logical operator
+           6.ternary operator
+           
+
+* special syambols>--few charecters which have special meaning known to java compiler and cannot be used for other purpose like..(){}[]
+
+>--NAMING CONVENTIONS:-
+
+1. Names of packages in Java are written in small letters
+ 
+2.Each word of class names and interface names start with a capital letter (String, DataInputStream, ActionListener etc.)
+ 
+3.The first word of a variable and method name is in small letters; then from second word onwards, each new word starts with a capital letter                (readLine( ), nextInt( ) )
+ 
+4.Such constants should be written by using all capital letters
+ 
+5.All keywords should be written by using all small letters
+------------------------------
+
+>--comments:- used to make the program more readable by adding details of the code
+
+>-- 2 types of comments
+
+* single line comments:-//
+* Multi-line comments:-/*  */
+
+
+TYPE CASTING:-  process of converting one data type to another data types
+>--implicit (or) widening type conversion:-
+      *smaller data type>--large data type
+     * carried out by compiler automatically
+     ( byte>-- int>-- long>-- float>-- double)
+>-- explicit (or) narrowing type convertion:-
+   *larger data type>-- smaller data type
+   * carried out by programmer using casting
+PROGRAMS:-
+
+>--implicit (or) widening type conversion:-
+
+ public class Main
+{
+public static void main(String[] args)
+{
+int my Int=2;
+double myDouble=myInt;
+System.out.println(myInt);
+System.out.println(myDouble);
+}
+}
+OUTPUT:2
+      2.0
+
+>-- explicit (or) narrowing type convertion:-
+
+public class Main
+{
+public static void main(String[] args)
+{
+double myDouble=9.78d;
+int myInt=(int) myDouble;
+System.out.println(myDouble);
+System.out.println(myInt);
+}
+}
+OUTPUT:9.78
+       9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
