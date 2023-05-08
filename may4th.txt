@@ -1,0 +1,223 @@
+4.Leap Year Checker: Create an application that takes a year as input and checks if it's a leap year. Use conditional statements to determine if the year is a leap year based on the rules for determining leap years.
+ 
+5. Temperature Converter: Create an application that takes a temperature in Celsius or Fahrenheit as input and converts it to the other unit. Use conditional statements to determine whether to convert from Celsius to Fahrenheit or vice versa.
+ 
+6. Employee Salary Calculator: Create an application that takes an employee's salary and calculates their annual salary, tax and net salary. Use conditional statements to determine the tax bracket and calculate the tax accordingly.
+
+///Create a simple game of rock-paper-scissors where the one player plays against the another player. Use conditional statements to determine the winner of each round. 
+import java.util.Scanner;
+public class Program5{
+  public static  void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int player1_choice,player2_choice;
+    System.out.println("enter your choice");
+    System.out.println("1. Rock");
+    System.out.println("2.Paper");
+    System.out.println("3.Scissors");
+    System.out.println("enter the player1 choice and player2 choice");
+    player1_choice = sc.nextInt();
+    player2_choice = sc.nextInt();
+    if (player1_choice==player2_choice)
+    {
+      System.out.println("Draw");
+    }
+    else if((player1_choice==1 && player2_choice==3)||(player1_choice==2 && player2_choice==1)||(player1_choice==3 && player2_choice==2))
+    {
+      System.out.println("Player1 win the game");
+    }
+    else if((player2_choice==1 && player1_choice==3)||(player2_choice==2 && player1_choice==1)||(player2_choice==3 && player1_choice==2))
+    {
+      System.out.println("Player2 win the game");
+    }
+    else
+    {
+      System.out.println("Invalid number");
+    }
+      
+    }
+  }
+
+
+
+
+///WAP to read two integers and an operator(arithmetic) and prints the result
+ 
+import java.util.Scanner;
+ 
+public class Calculator2 {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int num1, num2;
+    char operator;
+    System.out.println("enter two integers");
+    num1 = sc.nextInt();
+    num2 = sc.nextInt();
+    System.out.println("enter an operator");
+    operator = sc.next().charAt(0);
+    switch (operator) {
+      case '+':
+        System.out.println("addition:" + (num1 + num2));
+        break;
+      case '-':
+        System.out.println("substraction:" + (num1 - num2));
+        break;
+      case '*':
+        System.out.println("multiplication:" + (num1 * num2));
+        break;
+      case '/':
+        System.out.println("division:" + (num1 / num2));
+        break;
+      case '%':
+        System.out.println("modulus:" + (num1 % num2));
+        break;
+      default:
+        System.out.println("enter arithmetic operator only");
+        break;
+    }
+ 
+  }
+}
+
+
+///print the week days
+
+import java.util.Scanner;
+class WeekDays
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+int num;
+System.out.println("enter the number");
+num=sc.nextInt();
+switch (num){
+case (1): 
+System.out.println("SUNDAY");
+break;
+case (2):
+System.out.println("MONDAY");
+break;
+case (3):
+System.out.println("TUESDAY");
+break;
+case (4):
+System.out.println("WEDNESDAY");
+break;
+case (5): 
+System.out.println("THURSDAY");
+break;
+case (6): 
+System.out.println("FRIDAY");
+break;
+case (7):
+System.out.println("SATURDAY");
+break;
+default: System.out.println("print a day");
+}        
+}
+}
+
+
+4.Leap Year Checker: Create an application that takes a year as input and checks if it's a leap year. Use conditional statements to determine if the year is a leap year based on the rules for determining leap years.
+ 
+import java.util.Scanner;
+class LeapYearOrNot{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int year;
+System.out.println("enter the year");
+year=sc.nextInt();
+if(year%4==0)
+System.out.println(year +"is a leap year");
+else if(year%100!=0)
+System.out.println(year +"is not a leap year");
+else if(year%400==0)
+System.out.println(year +"is a leap year");
+else
+System.out.println(year+"is not a leap year");
+    
+}
+}
+
+5. Temperature Converter: Create an application that takes a temperature in Celsius or Fahrenheit as input and converts it to the other unit. Use conditional statements to determine whether to convert from Celsius to Fahrenheit or vice versa.
+
+import java .util.Scanner;
+public class Temperature
+  {
+    public static void main (String[] args)
+    {
+     char ch;
+      float C,F;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter any charecter:");
+      ch=sc.next().charAt(0);
+      if(ch=='c'|| ch=='C')
+      {
+        System.out.println("Enter the value of C:");
+        C=sc.nextFloat();
+        F=(C*9/5+32);
+        System.out.println("temperature of F is:"+F);
+       
+      }
+      else if(ch=='f'|| ch=='F')
+      {
+        System.out.println("Enter the value of F:");
+        F=sc.nextFloat();
+        C=(F-32)*5/9;
+        System.out.println("temperature of C is:"+C);
+      }
+      else {
+        System.out.println("Enter correct value");
+      }
+   
+     
+     
+     
+   
+     
+     
+     
+     
+    }
+                            
+  }
+///WAP to input basic salary of an employee and calculate its Gross     salary according to following:
+    Basic Salary <= 10000 : HRA = 20%, DA = 80%
+    Basic Salary <= 20000 : HRA = 25%, DA = 90%
+    Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+import java.util.Scanner;
+class GrossSalary{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int basic salary;
+int gross salary;
+int hra,da;
+System.out.println("enter the basic salary");
+basic salary=sc.nextInt();
+if(basic Salary <= 10000)
+hra=(20/100)*basic salary;
+da=(80/100)*basic salary;
+gross salary=basic salary+hra+da;
+System.out.println(gross salary+"is gross salary");
+else if(basic Salary <= 20000)
+hra=(25/100)*basic salary;
+da=(90/100)*basic salary;
+gross salary=basic salary+hra+da;
+System.out.println(gross salary+"is gross salary");
+else if( basic Salary > 20000)
+hra=(30/100)*basic salary;
+da=(95/100)*basic salary;
+gross salary=basic salary+hra+da;
+System.out.println(gross salary+"is gross salary");
+}
+}
+
+
+
+
+
+
+
+
+   

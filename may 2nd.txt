@@ -1,0 +1,220 @@
+// by using arithemetic operators
+
+----------------------------------
+
+import java.util.Scanner;
+
+ public class FirstProgram {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int a, b;
+    System.out.println("enter the integer value");
+    a = sc.nextInt();
+    b = sc.nextInt();
+    System.out.println("The value of a+b is " + (a+b));
+    System.out.println("The value of a-b is " + (a-b));
+    System.out.println("The value of a*b is " + (a*b));
+    System.out.println("The value of a/b is " + (a/b));
+  }
+}
+--------------------------------------------
+// finding area of rectangle
+ 
+import java.util.Scanner;
+
+ public class Area Of Rectangle{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int width;
+    int height;
+    int area;
+    System.out.println("enter the values");
+    width = sc.nextInt();
+    height = sc.nextInt();
+    area = width*height;
+    System.out.println("Area of Rectangle = "+area);
+    
+  }
+}
+ -------------------------------
+//finding simple interest
+
+
+import java.util.Scanner;
+public class SimpleIntrest
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+float p,t,r,si ;
+  System.out.println("enter the value of principal amount");
+  p = sc.nextFloat();
+  System.out.println("enter the time");
+  t = sc.nextFloat();
+  System.out.println("enter the rate of interest");
+  r = sc.nextFloat();
+  si = (p*t*r)/100;
+  System.out.println("SimpleIntrest is" +si);
+}
+} 
+
+-----------------------------------------------
+// write a program to enter name age percentage
+
+import java.util.Scanner;
+
+public class assignment1 {
+
+    public static void main(String[] args) {
+        
+         Scanner sc = new Scanner(System.in);
+    String name;  int age;float percentage;
+    System.out.println("enter the name, age, percentage ");
+    name =sc.next();
+    age = sc.nextInt();
+    percentage = sc.nextFloat();
+    System.out.println("name is" + name);
+    System.out.println("age is" + age);
+    System.out.println("percentage is" + percentage);
+   
+  }
+}
+----------------------------------------
+// calculate age and income
+
+import java.util.Scanner;
+public class Program5{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int age,income;
+    System.out.println("enter the age and income");
+    age = sc.nextInt();
+    income = sc.nextInt();
+    if(age>=20&&income>=5000){
+      System.out.println("YES");
+    }
+    else{
+      System.out.println("NO");
+    }
+  }
+}
+
+--------------------------------------------------
+
+arithemetic operators:- 
+
+
+class Main {
+  public static void main(String[] args) {
+    
+    // declare variables
+    int a = 12, b = 5;
+
+    // addition operator
+    System.out.println("a + b = " + (a + b));
+
+    // subtraction operator
+    System.out.println("a - b = " + (a - b));
+
+    // multiplication operator
+    System.out.println("a * b = " + (a * b));
+
+    // division operator
+    System.out.println("a / b = " + (a / b));
+
+    // modulo operator
+    System.out.println("a % b = " + (a % b));
+  }
+}
+
+
+
+assignment operators:-
+
+
+
+class Main {
+  public static void main(String[] args) {
+    
+    // create variables
+    int a = 4;
+    int var;
+
+    // assign value using =
+    var = a;
+    System.out.println("var using =: " + var);
+
+    // assign value using =+
+    var += a;
+    System.out.println("var using +=: " + var);
+
+    // assign value using =*
+    var *= a;
+    System.out.println("var using *=: " + var);
+  }
+}
+
+relational operators:-
+
+
+
+class Main {
+  public static void main(String[] args) {
+    
+    // create variables
+    int a = 7, b = 11;
+
+    // value of a and b
+    System.out.println("a is " + a + " and b is " + b);
+
+    // == operator
+    System.out.println(a == b);  // false
+
+    // != operator
+    System.out.println(a != b);  // true
+
+    // > operator
+    System.out.println(a > b);  // false
+
+    // < operator
+    System.out.println(a < b);  // true
+
+    // >= operator
+    System.out.println(a >= b);  // false
+
+    // <= operator
+    System.out.println(a <= b);  // true
+  }
+}
+
+
+
+increment and decrement operators:-
+
+
+class Main {
+  public static void main(String[] args) {
+    
+    // declare variables
+    int a = 12, b = 12;
+    int result1, result2;
+
+    // original value
+    System.out.println("Value of a: " + a);
+
+    // increment operator
+    result1 = ++a;
+    System.out.println("After increment: " + result1);
+
+    System.out.println("Value of b: " + b);
+
+    // decrement operator
+    result2 = --b;
+    System.out.println("After decrement: " + result2);
+  }
+}
+
+
+
+
+

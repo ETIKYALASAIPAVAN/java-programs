@@ -1,0 +1,183 @@
+biggest of two numbers
+
+class Main{
+public static void main(String args[]){
+int num1=50;
+int num2=10;
+if(num1>num2)
+System.out.println(num1+ "greater");
+else
+System.out.println(num2+"greater");
+}
+}
+
+number is divisible by 5 and 11
+
+import java.util.Scanner;
+class NumDivOrNot{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a;
+System.out.println("enter the number");
+a=sc.nextInt();
+if(a%5==0&&a%11==0)
+System.out.println("given num is divisible by 5 and 11");
+else
+System.out.println("given num is not divisible by 5 and 11");
+}
+}
+
+finding positive or negative
+
+import java.util.Scanner;
+class PositiveOrNot{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a;
+System.out.println("enter the number");
+a=sc.nextInt();
+if(a<0)
+{
+    System.out.println("the given number is negative");
+}
+else if(a>0)
+{
+    System.out.println("the given number is positive");
+}
+else if(a==0)
+{
+    System.out.println("the given number is equal to zero");
+}
+    
+}
+}
+
+finding even or odd
+
+import java.util.Scanner;
+class EvenOrOdd{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int a;
+System.out.println("enter the number");
+a=sc.nextInt();
+if(a%2==0)
+System.out.println("the given number is even");
+else
+System.out.println("the given number is odd");
+}
+}
+ 
+biggest of three numbers
+
+
+check whether a character is alphabet or not.
+
+import java.util.Scanner;
+class ChAlphabetOrNot{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+char c;
+System.out.println("enter the character");
+c=sc.next().charAt(0);
+if((c>='a'&&c<='z')||(c>='A'&&c<='Z'))
+System.out.println("the given character is alphabet");
+else
+System.out.println("the given character is not alphabet");
+}
+}
+
+check whether a character is vowel or not
+
+import java.util.Scanner;
+class VowelOrNot{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+char c;
+System.out.println("enter the character");
+c=sc.next().charAt(0);
+if((c>='a'&&c<='z')||(c>='A'&&c>='Z'))
+System.out.println("the given character is alphabet");
+ if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+System.out.println(c+"is a vowel");
+else
+System.out.println(c+ "is a consonant");
+}
+}
+
+
+check whether a character is lower case or upper case
+
+import java.util.Scanner;
+class UpperCaseOrNot{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+char c;
+System.out.println("enter the character");
+c=sc.next().charAt(0);
+if(c>='a'&&c<='z')
+System.out.println("the given character lowercase");
+ else
+System.out.println("the given character is UPPER CASE");
+}
+}
+
+check whether input any character and check whether it is alphabet, digit    or special character.
+
+import java.util.Scanner;
+class AlphaOrDigitOrSpecialOrNot{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+char c;
+System.out.println("enter the character");
+c=sc.next().charAt(0);
+if((c>='a'&&c<='z')||(c>='A'&&c>='Z'))
+System.out.println("the given character is alphabet");
+else if(c>='0'&&c<='9')
+System.out.println("the given character is digit");
+else
+System.out.println("the given character is special character");
+}
+}
+
+
+WAP to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according to following:
+    Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+import java.util.Scanner;
+class PercentageOfMarks{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int physics;
+int chemistry;
+int biology;
+int maths;
+int computer;
+System.out.println("enter 5 subjects marks");
+physics=sc.nextInt();
+chemistry=sc.nextInt();
+biology=sc.nextInt();
+maths=sc.nextInt();
+computer=sc.nextInt();
+float percentage=(physics+chemistry+biology+maths+computer)/5;
+System.out.println("percentage:"+ percentage);
+if(percentage>=90)
+System.out.println("GRADE A");
+else if(percentage>=80)
+System.out.println("GRADE B");
+else if(percentage>=70)
+System.out.println("GRADE C");
+else if(percentage>=60)
+System.out.println("GRADE D");
+else if(percentage>=50)
+System.out.println("GRADE E");
+else if(percentage>=40)
+System.out.println("GRADE F");
+
+}
+} 
+----------------------------------------------------------------------------------------
