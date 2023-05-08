@@ -108,7 +108,8 @@ b.non numeric
 2.non premitive
 *string
 *array         
- VARIABLES:- variable is a named memory location whose value can change during the exection of the program.
+ 
+VARIABLES:- variable is a named memory location whose value can change during the exection of the program.
  *variables must first be declare before they can be used.
 *syntax:- datatypes var1,var2
   ex:-intx,y
