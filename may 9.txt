@@ -1,0 +1,175 @@
+//Write a Java program that prompts the user to enter their weight in kilograms and height in meters, and calculates their body mass index (BMI) using conditional statements and you need to print underweight,healthy ,overweight and obessity according to the following
+    bmi <18                underweight
+    bmi >=18 and bmi<25    healthy
+    bmi>=25 and bmi<30     overweight
+    bmi>=30                obessity
+ 
+import java.util.Scanner;
+class Bmi{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+double weight;
+double height;
+double Bmi;
+System.out.println("enter the weight in kilograms");
+weight=sc.nextDouble();
+System.out.println("enter the height in meters");
+height=sc.nextDouble();
+Bmi=weight/(height*height);
+System.out.println("Bmi is"+Bmi);
+if(Bmi<18)
+{
+System.out.println("underweight");
+}
+else if(Bmi>=18&&Bmi<25)
+{
+System.out.println("healthy");
+}
+else if(Bmi>=30)
+{
+System.out.println("obesisity");
+}
+
+}
+}
+
+-----------------------------------------------
+
+
+//Write a Java program that prompts the user to enter their age and prints out the number of years left until they can retire (assuming retirement age is 65)
+
+import java.util.Scanner;
+class Retirement{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int presentage;
+int retirementage=65;
+int remainingage;
+System.out.println("enter your present age");
+presentage=sc.nextInt();
+remainingage=(presentage-retirementage);
+System.out.println("remainingage is"+remainingage);
+}
+}
+
+-------------------------------------------------------
+
+
+//Write a Java program that prompts the user to enter three numbers and finds the maximum and minimum values.
+import java.util.Scanner;
+class MaxAndMinValues{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int a;
+int b;
+int c;
+System.out.println("enter the a value");
+a=sc.nextInt();
+System.out.println("enter the b value");
+b=sc.nextInt();
+System.out.println("enter the c value");
+c=sc.nextInt();
+if((a>b)&&(a>c))
+System.out.println("a is greatest");
+else if((b>a)&&(b>c))
+System.out.println("b is greatest");
+else
+System.out.println("c is greatest");
+if((a<b)&&(a<c))
+System.out.println("a is minimum");
+else if((b<a)&&(b<c))
+System.out.println("b is minimum");
+else
+System.out.println("c is minimum");
+
+}
+}
+-----------------------------------------------------------------
+
+//write a java program to read two integers and calculate absolute value ,square root of two integers
+
+
+import java.util.Scanner;
+import java.lang.Math;
+class AbsoluteSquareRoot{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int a;
+int b;
+System.out.println("enter a value");
+a=sc.nextInt();
+System.out.println("enter b value");
+b=sc.nextInt();
+int abs_a=Math.abs(a);
+int abs_b=Math.abs(b);
+double sqrt_a=Math.sqrt(a);
+double sqrt_b=Math.sqrt(b);
+System.out.println("absolute of a is"+abs_a);
+System.out.println("absolute of b is"+abs_b);
+System.out.println("square root of a is"+sqrt_a);
+System.out.println("square root of b is"+sqrt_b);
+}
+}
+-------------------------------------------------------------------------------------------------
+
+//assume that there are 500,200 and 100 notes are there in the ATM. write a java program to find the minimum number of notes to be dispensed for the requested amount using conditionals only . do not use loops
+
+import java.util.Scanner;
+class Notes{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int amount;
+int min_notes=0;
+int notes;
+System.out.println("enter the amount");
+amount=sc.nextInt();
+if(amount>=500)
+{
+notes=amount/500;
+min_notes=min_notes+notes;
+amount=amount%500;
+}
+if(amount>=200)
+{
+notes=amount/200;
+min_notes=min_notes+notes;
+amount=amount%200;
+}
+if(amount>=100)
+{
+notes=amount/100;
+min_notes=min_notes+notes;
+amount=amount%100;
+}
+System.out.println("min_notes are"+min_notes);
+}
+}
+
+--------------------------------------------------------------------------------------------
+ you are purchasing a mobile from a shop. shop owner want to give discount based on the cost of the mobile phone
+  if(cost>100000) -----10% discount
+  if(cost<100000 and cost>50000) -----5% discount
+  in all other cases-----2% discount
+  20% GST will be added(on the actual cost only)
+you need to write a program to determine the total price of the mobile phone
+
+import java.util.Scanner;
+public class Program18{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    long cost,discount,final_cost;
+    System.out.println("enter the cost of the mobile");
+    cost = sc.nextInt();
+    if(cost>=100000)
+      discount = (cost*10)/100;
+    else if(cost>=50000)
+      discount = (cost*5)/100;
+    else
+      discount = (cost*2)/100;
+    final_cost = (cost-discount)+((20*cost)/100);
+    System.out.println("final cost of the mobile is :"+final_cost);
+  }
+}
+ 
+
+
