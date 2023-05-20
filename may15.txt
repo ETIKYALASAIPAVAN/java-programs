@@ -1,0 +1,294 @@
+22. WAP to find sum of all natural numbers between 1 to n.
+23. WAP to find sum of all even numbers between 1 to n.
+24. WAP to find sum of all odd numbers between 1 to n.
+25. WAP to print multiplication table of any number.
+30. WAP to calculate sum of digits of a number.
+31. WAP to calculate product of digits of a number.
+32. WAP to enter a number and print its reverse.
+write a java program to find sum of first digit and last digit of a positive integer
+
+
+24.import java.util.Scanner;
+class Odd{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int n, sum=0,i=1;
+    System.out.println("enter n value");
+    n=sc.nextInt();
+    do{
+      if(i%2!=0)
+        sum=sum+i;
+      i=i+2;
+      }
+      while(i<=n);
+      System.out.println("sum is"+sum);
+  }
+}
+
+23.// write a program to find sum of even numbers between 1 to n
+import java.util.Scanner;
+class Even{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int n, i=1,sum=0;
+System.out.println("enter n value");
+n=sc.nextInt();
+do 
+{
+if(i%2==0)
+sum=sum+i;
+i=i+1;
+}
+while(i<=n);
+System.out.println("sum is"+sum);
+}
+}
+
+22.import java.util.Scanner;
+class Natural{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int n,sum=0,i=1;
+    System.out.println("enter n value");
+    n=sc.nextInt();
+    do{
+      sum=sum+i;
+      i=i+1;
+    }
+      while(i<=n);
+    System.out.println("sum is"+sum);
+  }
+}
+
+30.import java.util.Scanner;
+class Sumofdigits{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int num,digit,sum=0;
+    System.out.println("enter num value");
+    num=sc.nextInt();
+    do{
+      digit=num%10;
+      sum=sum+digit;
+      num=num/10;
+    }
+    while(num!=0);
+    System.out.println("sum is"+sum);
+ }
+}
+
+32.import java.util.Scanner;
+class Reverse{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int reverse=0,num,digit;
+    System.out.println("enter num value");
+    num=sc.nextInt();
+    do{
+      digit=num%10;
+      reverse=reverse*10+digit;
+      num=num/10;
+    }
+      while(num!=0);
+    System.out.println("reverse is"+reverse);
+  }
+}
+
+//write a java program to find sum of all prime numbers from 1 to n
+import java.util.Scanner;
+public class SumOfPrimeNum{
+ public static void main(String[] args){
+ Prime p = new Prime();
+ int n,i,sum;
+ Scanner sc = new Scanner(System.in);
+ System.out.println("enter number");
+ n = sc.nextInt();
+ for(i=1,sum=0;i<=n;i++){
+ boolean b = p.isPrime(i);
+ if(b)
+ sum=sum+i;
+ }
+ System.out.println("sum of prime numbers from 1 to "+n+" is "+sum);
+ }
+}
+
+class Prime{
+ public boolean isPrime(int num){
+ int i,nf;
+ for(i=1,nf=0;i<=num;i++)
+ {
+ if(num%i==0)
+ nf = nf+1;
+ }
+ if(nf==2)
+ return true;
+ else
+ return false;
+ }
+}
+
+//write a java program to find sum of first digit and last digit of a positive 
+integer
+import java.util.Scanner;
+class SumFirstLast{
+ public void sum(){
+ Scanner sc = new Scanner(System.in);
+ int n,digit,sum=0,count=0;
+ System.out.println("enter n value");
+ n = sc.nextInt();
+ int dup_n = n;
+ if(n<=9)
+ System.out.println("enter atleast 2 digit positive number");
+ else{
+ do{
+ digit = n%10;
+ count++;
+ n = n/10;
+ }while(n>0);
+ int first_digit =dup_n/((int)(Math.pow(10,(count-1))));
+ int last_digit = dup_n%10;
+ sum= first_digit+last_digit;
+ System.out.println("sum of first and last digit of "+dup_n+" is "+sum);
+ }
+ }
+}
+public class SumOfFirstDigitAndLastDigit{
+ public static void main(String[] args){
+ SumFirstLast sfl = new SumFirstLast();
+ sfl.sum();
+ }
+}
+
+25.WAP to print multiplication table of any number.
+import java.util.Scanner;
+class PrintMulTable{
+ public void mulTable(){
+ Scanner sc = new Scanner(System.in);
+ int n,range,i=1;
+ System.out.println("enter n value");
+ n = sc.nextInt();
+ System.out.println("enter range value");
+ range = sc.nextInt();
+ if(n<1 || range<1)
+ System.out.println("enter positive number and positive range only");
+ else{
+ do{
+ System.out.println(n+" * "+i+" = "+(n*i));
+ i++;
+ }while(i<=range);
+ }
+ }
+}
+public class PrintAnyMulTable{
+ public static void main(String[] args){
+ PrintMulTable pmt = new PrintMulTable();
+ pmt.mulTable();
+ }
+}
+--------------------------------------------------
+//WAP to find product first and last digits of a number
+import java.util.Scanner;
+class Product1{
+ public void product(){
+ Scanner sc= new Scanner(System.in);
+ int n,product,last_digit,first_digit;
+ System.out.println("enter the num");
+ n=sc.nextInt();
+ last_digit=n%10;
+ do{
+ first_digit=n%10;
+ n=n/10;
+ }while(n>0);
+ product=first_digit*last_digit;
+ System.out.println(product);
+ }
+}
+public class Product1main{
+ public static void main(String [] args){
+ Product1 a = new Product1();
+ a.product();
+ }
+}
+--------------------------------------------------
+31.WAP to calculate product of digits of a number.
+import java.util.Scanner;
+class ProductOfDigits{
+ public void product(){
+ Scanner sc = new Scanner(System.in);
+ int n,digit,prod=1;
+ System.out.println("enter n value");
+ n = sc.nextInt();
+ int dup_n = n;
+ if(n<=0)
+ System.out.println("enter positive number only");
+ else{
+ do{
+ digit = n%10;
+ prod = prod*digit;
+ n = n/10;
+ }while(n>0);
+ System.out.println("product of digits of "+dup_n+" is "+prod);
+ }
+ }
+}
+public class ProductOfDigitsOfNum{
+ public static void main(String[] args){
+ ProductOfDigits pod = new ProductOfDigits();
+ pod.product();
+ }
+}
+-----------------------------
+
+
+----------------------------------------------------------------
+for loop:- any 3 programs
+1.
+import java.util.Scanner;
+class forloop1{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int num,digit,sum=0;
+    System.out.println("enter num value");
+    num=sc.nextInt();
+    for(sum=0;num>0;num=num/10){
+      digit=num%10;
+    sum=sum+digit;
+    }
+    System.out.println("sum is"+sum);  
+  }
+}
+
+2.
+import java.util.Scanner;
+class Forloop2{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int num,i,sum=0;
+    System.out.println("enter num value");
+    num=sc.nextInt();
+    for(i=1;i<=num;i++)
+    for(sum=0;i<=num;i++)
+    sum=sum+i;
+  
+    System.out.println("sum is"+sum);
+  }
+}
+
+3.
+import java.util.Scanner;
+class Forloop3{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int num,i=1,sum=0;
+    System.out.println("enter num value");
+    num=sc.nextInt();
+    for(i=1;i<=num;i=i+2)
+    for(sum=0;i<=num;i=i+2)
+      sum=sum+i;
+    System.out.println("sum is"+sum);
+  }
+}
+
+
+
+
