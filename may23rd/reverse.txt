@@ -1,0 +1,15 @@
+
+68. WAP to find reverse of a string.import java.util.Scanner;
+public class Reverse{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        String s="durga";
+        String rev=" ";
+        for(int j=(s.length())-1;j>=0;j--)
+        {
+            rev=rev+s.charAt(j);
+        }
+        System.out.println(rev);
+        
+    }
+}
