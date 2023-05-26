@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Buffer{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        StringBuffer sb=new StringBuffer("Durga is good boy");
+        System.out.println(sb);
+        // insert
+        sb.insert(8, " a very");
+    System.out.println("after Inserting:"+sb);
+        //append
+        sb.append(" naughty");
+        System.out.println("after appending"+sb);
+        //replace
+        sb.replace(16,20,"bad");
+        System.out.println("after replacing"+sb);
+        sb.delete(16,20);
+        System.out.println("after deleting"+sb);
+       
+ 
+    }
+}
+
+
