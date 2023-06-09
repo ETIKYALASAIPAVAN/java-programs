@@ -1,0 +1,50 @@
+class Employee{
+  String ename;
+  int eid;
+  float esalary;
+  
+//setters
+  public void setEname(String ename)
+  {
+    this.ename=ename;
+  }
+  public void setEid(int eid)
+  {
+    this.eid=eid;
+  }
+  public void setEsalary(float esalary)
+  {
+    this.esalary=esalary;
+  }
+  
+  //getters
+  public String getEname()
+  {
+    return ename;
+  }
+  public int getEid()
+  {
+    return eid;
+  }
+  public float getEsalary()
+  {
+    return esalary;
+  }
+ 
+  
+}
+public class Employee2{
+  public static void main(String[]args){
+    Employee emp=new Employee();
+    emp.setEname("durga");
+    emp.setEid(517);
+    emp.setEsalary(1000.06f);
+    
+
+    System.out.println("Employee Name:"+emp.getEname());
+    System.out.println("Employee Id:"+emp.getEid());
+    System.out.println("Employee Salary:"+emp.getEsalary());
+    
+    
+  }
+}

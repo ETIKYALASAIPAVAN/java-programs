@@ -1,0 +1,27 @@
+class Employee{
+  String name;
+  int id;
+  float salary;
+  public void emp(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+    System.out.println("salary is"+salary);
+    
+  }
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    Employee e1=new Employee();
+    e1.name=sc.nextLine();
+    e1.id=sc.nextInt();
+    e1.salary=sc.nextFloat();
+    e1.emp();
+    Employee e2=new Employee();
+    sc.nextLine();
+    e2.name=sc.nextLine();
+    e2.id=sc.nextInt();
+    e2.salary=sc.nextFloat();
+    e2.emp();
+  }
+}
+  
+  
