@@ -1,0 +1,36 @@
+class Name{
+  int rollno;
+  String name;
+  static String college="AVANTHI";
+  Name(int r,String n)
+  {
+    rollno=r;
+    name=n;
+  }
+  static void change()
+  {
+    college="sreyas";
+    //name="pavan";
+  }
+  void display()
+  {
+    System.out.println(roll no+""+name+""+college);
+  }
+  
+}
+public class StaticMethodDemo{
+  public static void main(String[]args){
+    Name n1=new Name(517,"sai");
+    Name n2=new Name(518,"Durga");
+    Name n3=new Name(516,"pavan");
+    n1.display();
+    n2.display();
+    n3.display();
+    Name.change();
+    n1.display();
+    n2.display();
+    n3.display();
+    
+    
+  }
+}

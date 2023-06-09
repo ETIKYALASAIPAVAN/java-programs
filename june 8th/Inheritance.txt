@@ -1,0 +1,42 @@
+class Teacher{
+  String designation="mentor";
+  String collegename="AVANTHI";
+
+  //method
+  void print()
+  {
+    System.out.println("Teaching");
+  }
+}
+class SoftSkillTeacher extends Teacher{
+  String Name="sai";
+  String Subject="softskill";
+  int age=29;
+}
+class ComputerTeacher extends Teacher{
+  String Name="durga";
+  String Subject="computer";
+  int age=35;
+}
+public class Inheritance{
+  public static void main(String[]args){
+    ComputerTeacher obj1=new ComputerTeacher();
+    System.out.println("computer teacher details");
+    System.out.println(obj1.designation);
+    System.out.println(obj1.collegename);
+    System.out.println(obj1.Name);
+    System.out.println(obj1.Subject);
+    System.out.println(obj1.age);
+    obj1.print();
+    
+    SoftSkillTeacher obj2=new SoftSkillTeacher();
+    System.out.println("softskills teacher details");
+    System.out.println(obj2.designation);
+    System.out.println(obj2.collegename);
+    System.out.println(obj2.Name);
+    System.out.println(obj2.Subject);
+    System.out.println(obj2.age);
+    
+    
+  }
+}
