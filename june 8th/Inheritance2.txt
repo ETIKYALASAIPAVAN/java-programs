@@ -1,0 +1,33 @@
+class Brand{
+  float pixel=5.6f;
+  String charger="c pin";
+  void print()
+  {
+    System.out.println("features");
+  }
+}
+class redmi extends Brand{
+  String colour="black";
+  int size=6*5;
+}
+class vivo extends Brand{
+  String colour="white";
+  int size=5*6;
+}
+public class Inheritance2{
+  public static void main(String[]args){
+    vivo obj1=new vivo();
+    System.out.println(obj1.pixel);
+    System.out.println(obj1.charger);
+    System.out.println(obj1.colour);
+    System.out.println(obj1.size);
+    obj1.print();
+    redmi obj2=new redmi();
+    System.out.println(obj2.colour);
+    System.out.println(obj2.size);
+    System.out.println(obj2.pixel);
+    System.out.println(obj2.charger);
+  
+    
+  }
+}
